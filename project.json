@@ -1,0 +1,20 @@
+{
+  "overview": "An interactive educational tool for students to visualize gradient descent optimization in machine learning. Explore how learning rates and iterations minimize model error through real-time 2D loss surface animation, convergence charts, and step-by-step controls.",
+  "features": [
+    "2D loss surface visualization with color gradient",
+    "Real-time convergence line chart",
+    "Learning rate slider control",
+    "Play, Pause, Step, and Reset controls",
+    "Live metrics: current loss, weights, gradient magnitude",
+    "Responsive layout for mobile and desktop"
+  ],
+  "category": "education",
+  "tags": [
+    "machine-learning",
+    "gradient-descent",
+    "visualization",
+    "education",
+    "interactive"
+  ],
+  "last_updated": "2026-05-01T05:59:52.102Z"
+}

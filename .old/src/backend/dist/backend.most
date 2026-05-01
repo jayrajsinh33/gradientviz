@@ -1,0 +1,21 @@
+// Version: 1.0.0
+type LossEntry__499375330 = {iteration : Nat; loss : Float};
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+actor {
+  stable lossHistory :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?LossEntry__499375330]];
+      var elementIndex : Nat__490723111
+    };
+  stable state :
+    {
+      var initialW1 : Float;
+      var initialW2 : Float;
+      var initialized : Bool;
+      var iteration : Nat;
+      var w1 : Float;
+      var w2 : Float
+    }
+};

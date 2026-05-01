@@ -1,0 +1,26 @@
+type StepResult = 
+ record {
+   gradientMagnitude: float64;
+   iteration: nat;
+   loss: float64;
+   w1: float64;
+   w2: float64;
+ };
+type LossSurfacePoint = 
+ record {
+   loss: float64;
+   w1: float64;
+   w2: float64;
+ };
+type LossEntry = 
+ record {
+   iteration: nat;
+   loss: float64;
+ };
+service : {
+  getLossHistory: () -> (vec LossEntry) query;
+  getLossSurface: (gridSize: nat) -> (vec LossSurfacePoint) query;
+  initialize: (w1: float64, w2: float64) -> ();
+  reset: () -> ();
+  step: (learningRate: float64) -> (StepResult);
+}
